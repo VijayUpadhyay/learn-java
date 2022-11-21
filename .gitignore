@@ -1,3 +1,6 @@
+**/encodings.xml
+**/misc.xml
+**/vcs.xml
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
