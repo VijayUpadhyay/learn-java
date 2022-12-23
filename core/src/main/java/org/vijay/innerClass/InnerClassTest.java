@@ -6,9 +6,9 @@ public class InnerClassTest {
 		InnerClass inner = new InnerClass();
 		inner.display();
 		InnerClass.C a= new InnerClass.C();
-		InnerClass.C ab=  new com.vijay.innerClass.InnerClass.C();
+		// InnerClass.C ab= new com.vijay.innerClass.InnerClass.C();
 		//InnerClass.A b= new i.A();
-		ab.display();
+		// ab.display();
 		a.display();
 	}
 }

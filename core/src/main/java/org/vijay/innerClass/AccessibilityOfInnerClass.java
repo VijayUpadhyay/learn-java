@@ -20,7 +20,7 @@ class AccessibilityOfInnerClass {
 		System.out.println("main: "+AccessibilityOfInnerClass.a);
 		obj.display();
 		
-		InnerClass obj2 = new InnerClass();
+		AccessibilityOfInnerClass.InnerClass obj2 = new AccessibilityOfInnerClass.InnerClass();
 		System.out.println("inner class obj: "+obj2.b);
 		
 		/*InnerClass inner = new InnerClass();
