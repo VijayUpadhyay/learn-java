@@ -7,6 +7,7 @@ import java.util.stream.Stream;
 
 public class ArrayJoin {
 
+	@SafeVarargs
 	static <T> T[] joinAllStringArrays(T[]... arrays) {
 		int length = 0;
 		for (T[] array : arrays)
