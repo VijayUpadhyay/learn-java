@@ -1,4 +1,4 @@
-package org.vijay.array;
+package org.vijay.scopes.protect;
 
 public class ProtectedClass2 extends ProtectedClass1 {
 	public static void main(String[] args) {

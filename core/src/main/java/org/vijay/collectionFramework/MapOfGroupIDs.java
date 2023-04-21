@@ -1,53 +1,48 @@
 package org.vijay.collectionFramework;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.ListIterator;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class MapOfGroupIDs {
 
-	static ListofGroupIDs objListofGroupIDs = new ListofGroupIDs();
-	static Map<String, Long> m1 = null;
+    static ListOfGroupIDs objListofGroupIDs = new ListOfGroupIDs();
+    static Map<String, Long> m1 = null;
 
-	static List<Object> list = new ArrayList<Object>();
+    static List<Object> list = new ArrayList<Object>();
 
-	@SuppressWarnings("rawtypes")
-	public void fetchData() {
+    public static void main(String[] args) {
+        MapOfGroupIDs objMapOfGroupIDs = new MapOfGroupIDs();
+        objMapOfGroupIDs.fetchData();
+    }
 
-		AssigningMapIntoList objAssigningMapIntoList = new AssigningMapIntoList();
+    @SuppressWarnings("rawtypes")
+    public void fetchData() {
 
-		m1 = objAssigningMapIntoList.addValueToMap();
+        AssigningMapIntoList objAssigningMapIntoList = new AssigningMapIntoList();
 
-		Set<?> entrySet = m1.entrySet();
-		System.out.println(entrySet);
-		Iterator<?> i = entrySet.iterator();
+        m1 = objAssigningMapIntoList.addValueToMap();
 
-		// Display elements
-		while (i.hasNext()) {
-			Map.Entry me = (Map.Entry) i.next();
-			// System.out.println(me);
-			System.out.print(me.getKey() + ": ");
-			System.out.println(me.getValue());
-			list.add(me.getValue());
-		}
+        Set<?> entrySet = m1.entrySet();
+        System.out.println(entrySet);
+        Iterator<?> i = entrySet.iterator();
 
-		for (Map.Entry<String, Long> entryset : m1.entrySet())
-			System.out.println(entryset);
+        // Display elements
+        while (i.hasNext()) {
+            Map.Entry me = (Map.Entry) i.next();
+            // System.out.println(me);
+            System.out.print(me.getKey() + ": ");
+            System.out.println(me.getValue());
+            list.add(me.getValue());
+        }
 
-		// Fetch the list
-		ListIterator<Object> itr = list.listIterator();
-		while (itr.hasNext()) {
-			System.out.println((long) itr.next());
-		}
+        for (Map.Entry<String, Long> entryset : m1.entrySet())
+            System.out.println(entryset);
 
-	}
+        // Fetch the list
+        ListIterator<Object> itr = list.listIterator();
+        while (itr.hasNext()) {
+            System.out.println((long) itr.next());
+        }
 
-	public static void main(String[] args) {
-		MapOfGroupIDs objMapOfGroupIDs = new MapOfGroupIDs();
-		objMapOfGroupIDs.fetchData();
-	}
+    }
 
 }
