@@ -9,7 +9,6 @@ public class ArgumentIndexes {
         for (String s : args) {
             System.out.println(s);
         }
-
         // System.out.println(args[0] + " " + args[1]);
     }
 
